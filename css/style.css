@@ -1,0 +1,480 @@
+/*------Fonts------*/
+
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Regular.woff") format('woff'), url("../fonts/Montserrat-Regular.woff2") format('woff2');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-SemiBold.woff") format('woff'), url("../fonts/Montserrat-SemiBold.woff2") format('woff2');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Bold.woff") format('woff'), url("../fonts/Montserrat-Bold.woff2") format('woff2');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-BoldItalic.woff") format('woff'), url("../fonts/Montserrat-BoldItalic.woff2") format('woff2');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SundayBest';
+	src: url("../fonts/sundaybestrusbyalince.otf");
+	font-weight: normal;
+}
+
+
+/*------Body------*/
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #171717;
+	background-color: #FFFFFF;
+}
+
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.image__container {
+	display: grid;
+	grid-template-columns: repeat(4, 274px);
+	grid-template-rows: repeat(2, 296px);
+	gap: 15px;
+	justify-content: center;
+}
+
+.card__container {
+	display: grid;
+	grid-template-columns: repeat(4, 360px);
+	grid-template-rows: 530px;
+}
+
+.card__costumes {
+	display: grid;
+	grid-template-columns: repeat(4, 360px);
+	grid-template-rows: 530px;
+}
+
+.card__wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	display: flex;
+	margin: 35px auto 0px;
+}
+
+a:hover {
+	color: #FDA3C4;;
+	transition: color .1s linear;
+}
+
+a:active {
+	color: #F40000;
+	transition: color .1s linear;
+}
+
+
+/*------Header------*/
+
+.header {
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+.header__inner {
+	padding: 17px 0;
+	border-bottom: 1px solid #FDA3C4;
+}
+
+.header__top,
+.header__bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.header__location {
+	margin-right: 10px;
+}
+
+.header__location,
+.header__phone {
+	font-style: italic;
+	color: #FDA3C4;
+}
+
+.header__text {
+	display: inline-block;
+	padding: 4px 0;
+}
+
+.header__search {
+	font-weight: 600;
+	color: #171717;
+}
+
+.header__favourite {
+	margin-right: 33px;
+}
+
+
+/*------Nav------*/
+
+
+.nav {
+	margin-top: 26px;
+}
+
+.nav__link {
+	margin-left: 70px;
+
+	font-weight: 600;
+	line-height: 1.3;
+	color: #171717;
+}
+
+.nav__link:first-child {
+	margin-left: 0;
+}
+
+.image__container {
+	margin-top: 15px;
+}
+
+/*------Header Images------*/
+
+
+.t-shirts {
+	grid-column: 1/3;
+}
+
+.hoodies {
+	grid-column: 3/5;
+}
+
+.image__card {
+	position: relative;
+}
+
+.t-shirts__item {
+	position: absolute;
+	bottom: 16px;
+	left: 22px;
+}
+
+.dresses__item {
+	position: absolute;
+	bottom: 60px;
+	left: 13px;
+}
+
+.costumes__item {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.bottom__item {
+	position: absolute;
+	bottom: 20px;
+	right: 4px;
+}
+
+.top__item {
+	position: absolute;
+	top: 102px;
+	right: 18px;
+}
+
+.hoodies__item {
+	position: absolute;
+	bottom: 13px;
+	left: 20px;
+}
+
+.image__card:hover {
+	opacity: 0.8;
+	transition: opacity .1s linear;
+}
+
+/*------Main------*/
+
+.title__item {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1140px;
+	height: auto;
+}
+
+.title {
+	font-family: 'SundayBest';
+	font-size: 60px;
+	color: #FDA3C4;
+}
+
+.subtitle {
+	display: inline-block;
+	position: absolute;
+	bottom: -18px;
+
+	font-weight: 600;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: #171717;
+}
+
+.subtitle__line {
+	display: inline-block;
+	height: 17px;
+	margin-left: 175px;
+
+	position: absolute;
+	bottom: -12px;
+}
+
+
+/*------Cards------*/
+
+.card {
+	margin-top: 35px;
+	position: relative;
+}
+
+.card__liked {
+	display: block;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.card__image {
+	position: relative;
+	width: 100%;
+	height: 434px;
+}
+
+.card__image img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card__image:hover {
+	opacity: 0.8;
+	transition: opacity .1s linear;
+}
+
+.card__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 320px;
+
+	padding: 28px 0;
+	margin-left: 20px;
+
+	border-top: 1px solid #FDA3C4
+}
+
+.card__text,
+.card__price {
+	display: inline-block;
+}
+
+.card__text {
+	max-width: 212px;
+	color: #171717;
+}
+
+.card__price {
+	font-size: 24px;
+	font-weight: 700;
+	color: #FDA3C4;
+}
+
+/*------Banner------*/
+
+.banner {
+	display: block;
+	margin: 35px auto 60px;
+
+	width: 100%;
+	max-width: 1440px;
+	height: 100%;
+
+	object-fit:	cover;
+}
+
+.banner:hover {
+	opacity: 0.8;
+	transition: opacity .1s linear;
+	cursor: pointer;
+}
+
+/*------Location------*/
+
+.location__image,
+.map,
+.title-2,
+.location__address {
+	display: block;
+}
+
+.location {
+	position: relative;
+	max-width: 1042px;
+	margin: 0 auto 120px;
+}
+
+.map {
+	position: absolute;
+	top: 0;
+	right: 55px;
+}
+
+.location__image {
+	width: 100%;
+	max-width: 560px;
+	height: 100%;
+	margin: 0 auto;
+
+	object-fit:	cover;
+}
+
+.title-2 {
+	position: absolute;
+	top: 130px;
+	left: 12px;
+
+	max-width: 300px;
+
+	font-family: 'SundayBest';
+	font-size: 60px;
+	line-height: 1.5;
+	text-align: right;
+}
+
+.location__address {
+	max-width: 230px;
+}
+
+.text__location {
+	position: absolute;
+	bottom: 240px;
+	right: 0;
+
+	max-width: 230px;
+}
+
+.address {
+	position: absolute;
+	left: 0;
+	bottom: 130px;
+}
+
+.time {
+	position: absolute;
+	left: 0;
+	bottom: 82px;
+}
+
+
+/*------Costumes------*/
+
+
+.card__costumes {
+	position: relative;
+	margin-top: 35px;
+}
+
+.image__costumes img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image__costumes:hover {
+	opacity: 0.8;
+	transition: opacity .1s linear;
+}
+
+
+/*------Footer------*/
+
+
+.footer {
+	width: 100%;
+	margin-top: 30px;
+
+	background-color: #FDA3C4;
+}
+
+.footer__inner {
+	padding: 60px 0;
+}
+
+.footer__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+
+/*------Nav------*/
+
+
+.footer__nav-link {
+	margin-left: 70px;
+
+	font-family: 'SundayBest';
+	font-size: 14px;
+	line-height: 1.5;
+
+	font-weight: 600;
+	color: #F40000;
+}
+
+.footer__nav-link:first-child {
+	margin-left: 0;
+}
+
+.footer__nav-link:hover {
+	color: #FFFFFF;
+	transition: color .1s linear;
+}
+
+.footer__nav-link:active {
+	color: #171717;
+	transition: color .1s linear;
+}
