@@ -65,7 +65,7 @@ body {
 	grid-template-rows: 530px;
 }
 
-.card__costumes {
+.price__container {
 	display: grid;
 	grid-template-columns: repeat(4, 360px);
 	grid-template-rows: 530px;
@@ -409,18 +409,18 @@ a:active {
 /*------Costumes------*/
 
 
-.card__costumes {
+.price__container {
 	position: relative;
 	margin-top: 35px;
 }
 
-.image__costumes img{
+.price__image img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.image__costumes:hover {
+.price__image:hover {
 	opacity: 0.8;
 	transition: opacity .1s linear;
 }
