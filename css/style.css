@@ -39,7 +39,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 1.14rem;
 	color: #171717;
 	background-color: #FFFFFF;
 }
@@ -49,6 +49,18 @@ body {
 	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 769px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.container {
+		max-width: 425px;
+	}
 }
 
 .image__container {
@@ -98,6 +110,12 @@ a:active {
 	border-bottom: 1px solid #FDA3C4;
 }
 
+@media screen and (max-width: 769px) {
+	.header__inner {
+		padding: 10px 0;;
+	}
+}
+
 .header__top,
 .header__bottom {
 	display: flex;
@@ -108,6 +126,43 @@ a:active {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
+@media screen and (max-width: 769px) {
+	.header__top,
+	.header__bottom {
+		max-width: 740px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.header__info {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	.header__top {
+		max-width: 430px;
+		font-size: 0.7125rem;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	.header__bottom,
+	.header__location,
+	.header__text,
+	.header__action {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	.logo {
+		max-width: 80%;
+	}
+}
+
 
 .header__location {
 	margin-right: 10px;
@@ -153,12 +208,25 @@ a:active {
 	margin-left: 0;
 }
 
-.image__container {
-	margin-top: 15px;
+
+@media screen and (max-width: 769px) {
+	.nav__link {
+		margin-left: 22px;
+		font-size: 0.99rem;
+	}
+
+	.nav__link:first-child {
+		margin-left: 10px;
+	}
 }
+
 
 /*------Header Images------*/
 
+
+.image__container {
+	margin-top: 15px;
+}
 
 .t-shirts {
 	grid-column: span 2;
@@ -222,9 +290,15 @@ a:active {
 	height: auto;
 }
 
+@media screen and (max-width: 769px) {
+	.title__item {
+		max-width: 740px;
+	}
+}
+
 .title {
 	font-family: 'SundayBest';
-	font-size: 60px;
+	font-size: 3.75rem;
 	color: #FDA3C4;
 }
 
@@ -234,7 +308,7 @@ a:active {
 	bottom: -18px;
 
 	font-weight: 600;
-	font-size: 28px;
+	font-size: 1.99rem;
 	text-transform: uppercase;
 	color: #171717;
 }
@@ -254,6 +328,12 @@ a:active {
 .card {
 	margin-top: 35px;
 	position: relative;
+}
+
+@media screen and (max-width: 769px) {
+	.card {
+		max-width: 80%;
+	}
 }
 
 .card__liked {
@@ -306,7 +386,7 @@ a:active {
 }
 
 .card__price {
-	font-size: 24px;
+	font-size: 1.71rem;
 	font-weight: 700;
 	color: #FDA3C4;
 }
@@ -368,7 +448,7 @@ a:active {
 	max-width: 300px;
 
 	font-family: 'SundayBest';
-	font-size: 60px;
+	font-size: 4.275rem;
 	line-height: 1.5;
 	text-align: right;
 }
@@ -398,12 +478,24 @@ a:active {
 }
 
 
+@media screen and (max-width: 769px) {
+	.location {
+		display: none;
+	}
+}
+
 /*------Costumes------*/
 
 
 .price__container {
 	position: relative;
 	margin-top: 35px;
+}
+
+@media screen and (max-width: 769px) {
+	.card {
+		max-width: 60%;
+	}
 }
 
 .price__image img{
@@ -424,49 +516,116 @@ a:active {
 .footer {
 	width: 100%;
 	margin-top: 30px;
+	padding: 60px 0;
 
 	background-color: #FDA3C4;
 }
 
 .footer__inner {
-	padding: 60px 0;
-}
-
-.footer__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
 }
 
+@media screen and (max-width: 769px) {
+	.footer__inner {
+		max-width: 740px;
+	}
+}
 
-/*------Nav------*/
+@media screen and (max-width: 769px) {
+	.logo-footer {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.footer__nav:nth-child(4) {
+		display: none;
+	}
+}
 
 
-.footer__nav-link {
+.footer__nav {
+	display: flex;;
+	flex-direction: column;
 	margin-left: 70px;
+}
+
+@media screen and (max-width: 769px) {
+	.footer__nav {
+		margin-left: 0;
+	}
+}
+
+
+.footer__nav-title {
+	margin-bottom: 15px;	
 
 	font-family: 'SundayBest';
-	font-size: 14px;
+	font-size: 0.99rem;
 	line-height: 1.5;
 
 	font-weight: 600;
 	color: #F40000;
 }
 
-.footer__nav-link:first-child {
-	margin-left: 0;
+.footer__nav-title:last-child {
+	margin-bottom: 0;
+}
+
+.footer__nav-title:hover {
+	color: #FFFFFF;
+	transition: color .1s linear;
+}
+
+.footer__nav-title:active {
+	color: #171717;
+	transition: color .1s linear;
+}
+
+.footer__nav-link,
+.footer__nav-text {
+	font-size: 0.85rem;
+	color: #FFFFFF;
+	padding-bottom: 10px;
 }
 
 .footer__nav-link:hover {
-	color: #FFFFFF;
+	color: #F40000;
 	transition: color .1s linear;
 }
 
 .footer__nav-link:active {
 	color: #171717;
 	transition: color .1s linear;
+}
+
+.footer__nav-icon {
+	margin-right: 16px;
+}
+
+.footer__nav-icon:last-child {
+	margin-right: 0;
+}
+
+.footer__nav-columns {
+	width: 238px;
+}
+
+.footer__content-row {
+	display: flex;
+}
+
+.footer__nav-img {
+	margin-right: 30px;
+}
+
+.footer__title-link {
+	display: flex;
+	justify-content: flex-end;
 }
